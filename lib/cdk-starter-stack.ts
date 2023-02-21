@@ -6,7 +6,7 @@ export class CdkStarterStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    const bucket = new Bucket(this, 'starter-bucket', {
+    new Bucket(this, 'starter-bucket', {
       removalPolicy: RemovalPolicy.DESTROY,
     });
   }
