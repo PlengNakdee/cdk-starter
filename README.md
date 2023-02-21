@@ -1,14 +1,27 @@
-# Welcome to your CDK TypeScript project
+# CDK Starter Stack [TypeScript]
 
-This is a blank project for CDK development with TypeScript.
+> CDK v2
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## How to Use
 
-## Useful commands
+1. Clone the repository
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+2. Install the dependencies
+
+```bash
+npm install
+```
+
+3. Create the CDK stacks
+
+```bash
+npx aws-cdk deploy
+```
+
+4. Open the AWS Console and the stack should be created in your default region
+
+5. Clean Up
+
+```bash
+npx aws-cdk destroy CdkStarterStack
+```
